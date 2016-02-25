@@ -1,0 +1,33 @@
+ablaof open c-board deployment auf freemailer, hier: hostinger
+
+----------
+2do: die ganzen gelöschten ~tilde-files.php noch löschen!) 
+-----------
+1) registrierung beim anbieter
+2) mysql aktivieren
+3) connexion-strings des anbieters in die PDO/connex.php übernehmen
+4) via ftp-client (gFTP) den gesamten Ordner mit den connexion-strings hochladen
+5) im folder auto/maketables.php aufrufen --> success beim anlegen der tables
+6) 1. User-Registration (vom superadmin) via domain.xyz/OpenC-BOARD/login/register.php
+7) Superadmin (="user number one") benötigt keine Freigabe / Zugangsberechtigung. admin permission = mandatory.
+   => direkter login via der weitergeleiteten welcome.php
+8) domain.xyz/OpenC-BOARD/overview.php (noch) leer
+9) via [wbs admin.] button -> neues projekt erstellen.
+  
+OK. ABER BUG-ALARM:
+
+a) <gelöst>
+nur die ersten beiden level-dropdowns (blau und lind-grün) stehen zur verfügung, beim 3. steht: connection error!
+
+V1 zur lösung: im newWBSelements.php die  "include './PDO/connex.php';" auf "include_once './PDO/connex.php';" geändert.
+== OK, HAT fUNKTIONIERT! ==> alle abändern. diese fehlerquelle wird sich wohl wiederholen!!
+
+PHP-versions-test via domain.xyz/phpversion-echo.php mit ERgebnis: "Current version is PHP 5.5.32"
+
+
+b) ~tilde-files-php löschen
+
+c) Umlaute im overview.php falsch dargestellt! (1. es sind diese komischen darstellungen -> check, why these
+
+d) ein / fehlt in der registrierungs-email zwischen top-level-domain.xyz/Open-C-BOARD/ folder
+
