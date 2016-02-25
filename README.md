@@ -6,3 +6,9 @@ The .txt file "steps made for deployment" is a short & easy step-by-step documen
 
 Be aware, that the C-BOARD is open source - but it is not "free software".
 According to the license found in the package/.zip, you can download and use and modify the C-BOARD in the way you want - but you are not allowed to  make distributions of the application AND you are supposed to send us the modifications so WE can decide if we make these changes available to others as well.
+
+More information about the functions & features can be found here:
+http://c-board.de/OpenCBOARD.html
+
+There you can find a short video how to map the Work Breakdown Structure of your existing project into the C-BOARD application simply by creating the hierachical forums one-by-one. (the tasks within the WBS-Elements are represented by the discussion-threads. If a tasks turns out to become bigger than expected, you can simply add an other WBS-element and move the task-related thread in there...)
+
