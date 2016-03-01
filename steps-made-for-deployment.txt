@@ -1,5 +1,76 @@
 
------------
+*****************************THE READ ME :: Open C-BOARD ***********************************
+
+You can start with working in your locally distributed project-team & set-up the Forum following your WBS within a few minutes.
+
+----------------------------------------------
+The Requirements (we tested with - might work with other databases and PHP versions as well...):
+
++ webspace
++ MySQL database
++ PHP 5.4.xx
+
++ email-service-provider
+
+-----------------------------------------------
+The steps:
+
+1a) check the connection-strings from your webspace-provider:
+-> creating a MySQL-database will result in:
+
++ hostname (often localhost, sometimes sth different)
++ username (for the database)
++ password (for the database)
++ name 	(of the database)
++ port (e.g 3306)
+
+1b) Enter these connection-strings into the PDO/connex.php file
+--------
+
+2a) create an account at an email-service-provider
+-> will result in:
+
++ "EmailServiceProviderUsername"; // the user-name used for your email-service-provider
++ "EmailServiceProviderPassword"; // the password used for your email-service-provider
++  'EmailServiceProviderHost'; // the (smtp) host of your email-service-provider(e.g.: smtp.sendgrid.net)
++ 587; // the port of your email-service-provider
+
+2b) Enter these connexion-strings into the PDO/email-provider.php file
+--------
+3) save the modified files
+
+4) upload the OpenC-BOARD folder to your webspace
+
+5) navigate with your browser to the webspace into the http://www.YOUR-WEBSPACE.COM/OpenC-BOARD/auto/maketables.php
+-> will result in creating the needed database-tables
+
+6) navigate with your browser to the webspace into the http://www.YOUR-WEBSPACE.COM/OpenC-BOARD/login/register.php
+
+**********THIS IS IMPORTANT: the 1st "user" who registers in a newly set-up C-BOARD has the super-user permissions, so: 
+-> register your administration-account at first.
+
+7) login via the form at the welcome-page or
+in general via navigation with your browser to the webspace into the http://www.YOUR-WEBSPACE.COM/OpenC-BOARD/login/login.php 
+ 		
+==============================================================================
+==============================================================================
+
+YOUR FIRST LOGIN:
+
+a) login always redirects you to the overview page, showing you the forums.
+b) there are no forums yet - you need to create them via the green button [wbs admin.]
+c) Select the blue WBS-Level1 -> create new Project
+d) add the project-id(e.g. "1" for your first project); a project-name; a project-description
+e) If you already have created a work-breakdown-structure of your project, you can map that structure 1:1 via the [wbs admin.]
+or f) If you wish or need to create the WBS in a collaborative process (gaining advantage of the knowledge of the experts in your team, building up comittment from the very beginning): use the first, just automated discussion-thread in the C-BOARD. Click the blue [WBS/ overview] button.
+
+g) If you are playing an active role in the project being an active member and C-BOARD-user, we strongly reccomend you to create an account for this role and do not use the administrator account for the daily usage. 
+h) if you/other users create their user-account, the administrator has to change the permission of each user for granting access to the C-BOARD. 
+
+
+==========================================================================================================================
+==========================================================================================================================
+----below is the short german "steps-made-for-deployment" version - the commented steps I made by myself for testing the deployment on a free-webspace-provider-------
 1) registrierung beim anbieter
 2) mysql aktivieren
 3) connexion-strings des anbieters in die PDO/connex.php übernehmen
