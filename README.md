@@ -1,5 +1,5 @@
 # C-BOARD
-Open Source version of the WBS designed forum/ discussion board for project collaboration in virtual teams
+Open Source version of the WBS designed forum/ discussion board for project collaboration in virtual teams - deployment of this single C-BOARD is easy, it will work on most free web hosting services, good for students to learn project collaboration and the benfits of a work breakdown structure. 
 
 The .zip file available for download contains all files needed for your own deployment of the C-BOARD.
 The .txt file "steps made for deployment" is a short & easy step-by-step documentation.
@@ -12,3 +12,10 @@ http://c-board.de/OpenCBOARD.html
 
 There you can find a short video how to map the Work Breakdown Structure of your existing project into the C-BOARD application simply by creating the hierachical forums one-by-one. (the tasks within the WBS-Elements are represented by the discussion-threads. If a tasks turns out to become bigger than expected, you can simply add an other WBS-element and move the task-related thread in there...)
 
+There is now a complete groupware with an integrated C-BOARD available as well: the CYBR CSCW-SUITE CCS!
+available for download:
+https://sourceforge.net/projects/c-c-s/
+
+For the CCS all code is based on TSL/SSL, the stanford javascrypt crypto library (sjcl), GnuPGP ... no exteranl sources, OpenVPN ready.
+The CCS has a webbased SCRUM, a sharepoint like content management system, a virtual Shopfloormanagement application, CFLX-enhanced, PGP encrypted & WBS-assigned emails, multiprojectcapabilities... and regularily updates.
+If you need a professional, secure solution: use the CCS!
